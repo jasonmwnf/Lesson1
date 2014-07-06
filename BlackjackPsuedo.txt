@@ -1,0 +1,74 @@
+PSUEDOCODE BLACKJACK
+
+Start
+
+display welcome message
+get player name
+
+do while play black jack == yes
+
+	(draw_board)
+	Deal Player two cards
+	
+	show player_total (get_total)
+	
+
+	if player_total == 21
+		say "you win!"
+		say "play black jack?"
+	end
+
+	Does Player want to hit me or stay?
+
+	(Players Turn) 
+
+	do while hit me is true and player_total is less than 21
+		deal another card (draw_card)
+		show player_total (get_total)
+		does player want to hit me or stay?
+	end
+
+	if player_total > 21
+		say "BUST!"
+		say "play black jack?"
+	else if player_total == 21
+		say "You Win!"
+		say "play black jack?"
+	end
+
+	(Computers Turn)
+
+	Deal computer two cards (draw_board)
+	show computer_total (get_total)
+
+	if computer_total == 21
+		say "Dealer wins!"
+		say "play black jack?"
+	end
+
+	do while computer_total < 17
+		deal another card (draw_card)
+		show computer_total (get_total)
+	end
+
+	if computer_total > 21
+		say "Dealer BUST! Player wins!"
+		say "play black jack?"
+	else if computer_total == 21
+		say "Dealer wins!"
+		say "play black jack?"
+	else if computer_total > player_total
+		say "Dealer Wins!"
+		say "play black jack?"
+	else 
+		say "Player wins!"
+		say "play black jack?"
+	end
+
+		
+end
+
+
+	
+	
+	
