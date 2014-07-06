@@ -132,7 +132,7 @@ begin
           
     end while dealer_total <= 17 
 
-    if dealer_total > player_total
+    if dealer_total > player_total && dealer_total < 21
       puts "Dealer Wins!"
     else
       puts "#{player_name} Wins!"
